@@ -38,6 +38,13 @@ flowchart TD
    Create their own projects.
    Update their profile at any time.
 
+   🧪 Test Credentials
+
+If you want to explore the app quickly, you can log in using the following credentials:
+
+Email: lakshakarashutosh77@gmail.com  
+Password: Ashu7985@
+
 ## ✨ Features
 
 * **User Authentication**: Signup & Login with validation.
