@@ -1,9 +1,9 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const API_BASE = "http://localhost:8000/api";
-
-// const API_BASE = "https://pactabackend.onrender.com/api";
+// const API_BASE = "http://localhost:8000/api";
+// const API_BASE = import.meta.env.REACT_APP_API_BASE;
+const API_BASE = "https://dev-backend-zvor.onrender.com/api";
 
 export const fetchProjects = createAsyncThunk(
   "projects/fetchProjects",
@@ -73,7 +73,10 @@ const projectSlice = createSlice({
       })
       .addCase(fetchProjects.fulfilled, (state, action) => {
         state.loading = false;
-        state.projects = action.payload;
+        // state.projects = action.payload;
+        state.projects = Array.isArray(action.payload) 
+        ? action.payload 
+        : action.payload.projects || []; 
       })
       .addCase(fetchProjects.rejected, (state, action) => {
         state.loading = false;

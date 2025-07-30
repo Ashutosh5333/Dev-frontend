@@ -55,8 +55,8 @@ export default function ProjectsPage() {
 
   const filteredProjects = projects?.filter(
     (p) =>
-      p.title?.toLowerCase().includes(search.toLowerCase()) ||
-      p.postedBy?.name?.toLowerCase().includes(search.toLowerCase())
+      p?.title?.toLowerCase().includes(search.toLowerCase()) ||
+      p?.postedBy?.name?.toLowerCase().includes(search.toLowerCase())
   );
 
   // console.log("projects------>",projects)
@@ -90,12 +90,12 @@ export default function ProjectsPage() {
           )}
 
           <main className="flex flex-col gap-8">
-            {filteredProjects.length === 0 && !loading ? (
+            {filteredProjects?.length === 0 && !loading ? (
               <p className="text-center text-lg text-gray-400">
                 😕 No projects found.
               </p>
             ) : (
-              filteredProjects.map((project) => (
+              filteredProjects?.map((project) => (
                 <ProjectCard
                   key={project._id}
                   project={project}
@@ -112,7 +112,7 @@ export default function ProjectsPage() {
             Dev Connect Members
           </h2>
           <div className="space-y-3">
-            {users.map((member) => (
+            {users?.map((member) => (
               <div key={member._id} className="flex items-center gap-3">
                 {member.image ? (
                   <img
