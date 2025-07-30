@@ -11,7 +11,6 @@ This is the **frontend** for the **Portfolio Project Platform**, built using **R
 
 ## 📸 Screenshots
 
-> (Add images here later)
 * <img width="1460" height="817" alt="Screenshot 2025-07-30 at 10 09 14 PM" src="https://github.com/user-attachments/assets/c48e8236-c08d-437a-90cb-1fd6705c1ee7" />
 * <img width="1466" height="784" alt="Screenshot 2025-07-30 at 10 11 21 PM" src="https://github.com/user-attachments/assets/08e226fb-2462-416e-a237-2c1278a94cb6" />
 <img width="1425" height="825" alt="Screenshot 2025-07-30 at 10 11 44 PM" src="https://github.com/user-attachments/assets/bf63acff-03a4-4989-9080-7ba2d29eba2d" />
