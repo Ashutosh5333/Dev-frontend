@@ -19,6 +19,24 @@ This is the **frontend** for the **Portfolio Project Platform**, built using **R
 
 
 ---
+## User Flow
+flowchart TD
+    A[User Visits Platform] --> B{Has an account?}
+    B -- No --> C[Signup with Name, Email, Password]
+    C --> D[Login]
+    B -- Yes --> D[Login]
+    D --> E[View Projects Feed]
+    E --> F[View Other User's Projects]
+    F --> G[Comment on Projects]
+    E --> H[Create New Project]
+    D --> I[Update Profile]
+    
+   If the user has no account → Signup → Login.
+   After login, the user can:
+   Browse all projects posted by others.
+   Comment on projects.
+   Create their own projects.
+   Update their profile at any time.
 
 ## ✨ Features
 
